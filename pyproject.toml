@@ -32,11 +32,11 @@ classifiers = [
 ]
 dependencies = [
     "mmh3>=4.0.0,<6.0.0",
-    "requests>=2.20.0,<3.0.0",
+    "requests>=2.34.2",
     "click>=7.1.1,<9.0.0",
     "rich>=10.11.0,<15.0.0",
     "strictyaml>=1.7.0,<2.0.0", # CVE-2020-14343 was fixed in 5.4.
-    "pydantic>=2.0,<3.0,!=2.4.0,!=2.4.1,!=2.12.0,!=2.12.1", # 2.4.0, 2.4.1, 2.12.0, 2.12.1 has a critical bug
+    "pydantic>=2.13.4", # 2.4.0, 2.4.1, 2.12.0, 2.12.1 has a critical bug
     "fsspec>=2023.1.0",
     "pyparsing>=3.1.0,<4.0.0",
     "tenacity>=8.2.3,<10.0.0",
@@ -58,7 +58,7 @@ pyarrow = [
     "pyiceberg-core>=0.5.1,<0.9.0",
 ]
 pandas = [
-    "pandas>=1.0.0",
+    "pandas>=1.0.5",
     "pyarrow>=17.0.0",
 ]
 duckdb = [
@@ -68,7 +68,7 @@ duckdb = [
 ray = [
     "ray>=2.10.0,<3.0.0",
     "pyarrow>=17.0.0",
-    "pandas>=1.0.0",
+    "pandas>=1.0.5",
 ]
 bodo = ["bodo>=2025.7.4"]
 daft = ["daft>=0.5.0"]
